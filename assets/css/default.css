@@ -1,5 +1,8 @@
 
-
+*{
+  font-family:Arial;
+}
+/*
 #layerslider div.large-caption {
   font-size: 34px;
 }
@@ -9,7 +12,79 @@
   line-height: 48px;
   padding: 0 13px 0 13px;
 }
+*/
 /* icons */
 .fa:before{
-  color: blue;
+  /*color: blue;*/
 }
+
+h1, h2{
+  /*font-family:Arial Black;*/
+  font-weight: bold;
+  text-align: center;
+}
+h3, h4, h5{
+  font-weight: bold;
+}
+
+h1{
+  font-size: 60px
+}
+
+h2{
+  font-size: 50px
+}
+
+h4{
+  margin-top:25px
+}
+
+/* Prefer horizontal scroll to wrapping code */
+pre{
+  text-align: left;
+  white-space:pre;
+  word-wrap:normal;
+  word-break:normal;
+  overflow-x:auto;
+}
+
+.container-fluid{
+  
+}
+
+.header-container{
+  margin-top: 50px;
+  height: 600px;
+  background-color: #222222 /*#383638 *//*#AAAAAA*/
+}
+
+.header-img {
+  padding-top:80px;
+  text-align: center;
+}
+
+.header-text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.panel-img{
+  text-align: left;
+}
+
+.panel-heading, .panel-body, .panel{
+  padding-left:0px;
+  margin-left:0px;
+  background-color: transparent;
+}
+
+.panel-title{
+  /*font-size: 30px*/
+}
+
+.icon-row{
+  padding-top:80px;
+  padding-bottom:60px
+}
+
