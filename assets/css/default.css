@@ -14,9 +14,15 @@
 }
 */
 /* icons */
-.fa:before{
-  /*color: blue;*/
+.fa{
+  color: #222222;
 }
+
+.fa:hover,
+.fa:focus{
+  color: #777777;
+}
+
 h1, h2{
   font-family:Arial Black;
   font-weight: bold;
@@ -52,13 +58,24 @@ pre{
   overflow-x:auto;
 }
 
+a{
+  font-weight: bold;
+}
+.margin-top{
+  margin-top: 20px;
+}
+
+.margin-bottom{
+  margin-bottom: 20px;
+}
+
 .container-fluid{
   
 }
 
 .header-container{
   margin-top: 50px;
-  height: 600px;
+  height: 700px;
   background-color: #222222 /*#383638 *//*#AAAAAA*/
 }
 
@@ -93,4 +110,35 @@ pre{
 
 .center{
   text-align: center;
+}
+
+.right{
+  text-align: right;
+}
+
+.header-background{
+background-image:url('images/header-400.png');
+		background-repeat: no-repeat;
+		background-position: center; 
+		margin-top: 80px;
+		height:400px;
+}
+
+@media all and (min-width: 768px)  {
+    .header-background {
+		background-image:url('images/header-400.png');
+		background-repeat: no-repeat;
+		background-position: center; 
+		margin-top: 80px;
+		height:400px;
+	}
+}
+@media all and (max-width: 767px) {
+    .header-background {
+		background-image: url('images/flame-400.png');
+		background-repeat: no-repeat;
+		background-position: center; 
+		margin-top: 80px;
+		height:400px; 
+	}
 }

@@ -57,7 +57,7 @@
 		background-image:url('images/header-400.png');
 		background-repeat: no-repeat;
 		background-position: center; 
-		margin-top: 80px;
+		margin-top: 130px;
 		height:400px;
 	}
 }
@@ -66,7 +66,7 @@
 		background-image: url('images/flame-400.png');
 		background-repeat: no-repeat;
 		background-position: center; 
-		margin-top: 80px;
+		margin-top: 130px;
 		height:400px; 
 	}
 }
@@ -190,12 +190,10 @@
 						</div>
 						<p>
 							<br/>
-							<br/>
-							<h3 class="center">Installation</h3>
-							<div class="center">
+							<h3 class="center margin-top">Installation</h3>
+							<div class="center margin-bottom">
 								PersistanceMap can be downloaded and installed as a <a href="http://docs.nuget.org/consume/installing-nuget">NuGet</a> Package.
 							</div>
-							<br/>
 							<div class="row">
 								<div class="col-sm-6">
 								<b>MSSql Server</b>
@@ -213,7 +211,7 @@
 							<div class="center">
 								<h3>Examples</h3>
 							</div>
-							<div class="row">
+							<div class="row margin-top">
 								<div class="col-sm-6">
 									<b>MSSql Database</b>
 									<pre>
@@ -239,8 +237,14 @@ using (var context = provider.Open())
 }</pre>
 								</div>
 							</div>
+							<div class="row margin-bottom margin-top">
+								<div class="center">
+								Create a database, create a Table, insert, read and update values in one go.</br>
+								And everything is generated from the definition of type
+								</div>
+							</div>
 							<div class="row">
-								<div class="col-sm-12">
+								<div class="col-sm-8 col-sm-offset-2">
 									<pre>var provider = new SqlContextProvider(connectionString);
 using (var context = provider.Open())
 {
@@ -320,21 +324,48 @@ using (var context = provider.Open())
 							
 							<p>
 							<br/>
-							<h3 class="center">Extensions</h3>
+								<h3 class="center">Extensions</h3>
+								<div class="center margin-bottom">
+									InjectionMap comes with several extensions.
+								</div>
+								<div class="row">
+									<div class="col-sm-4 right"><a href="https://github.com/InjectionMap/InjectionMap.Wpf">InjectionMap.Wpf</a></div>
+									<div class="col-sm-8">Extension for injecting the DataContext with a mapping</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-4 right"><a href="https://github.com/InjectionMap/InjectionMap.Configuration">InjectionMap.Configuration</a></div>
+									<div class="col-sm-8">Configure Mappings and MapInitializers in the application config file</div>
+								</div>
 							</p>
 							
 							<p>
 								<br/>
 								<h3 class="center">Installation</h3>
-								<div class="center">
+								<div class="center margin-bottom">
 									InjectionMap can be downloaded and installed as a <a href="http://docs.nuget.org/consume/installing-nuget">NuGet</a> Package.
 								</div>
-								<br/>
 								<div class="row">
+									<div class="col-sm-8 col-sm-offset-2">
 										<pre>PM > Install-Package PersistanceMap</pre>
+									</div>
 								</div>
 							</p>
 							<h3 class="center">Examples</h3>
+							<div class="col-sm-8 col-sm-offset-2">
+							<pre>var container = new MappingContainer();
+using (var mapper = new InjectionMapper())
+{
+    // register InjectionMappingTest to the interface IInjectionMappingTest
+    mapper.Map&lt;IInjectionMappingTest, InjectionMappingTest&gt;();
+}
+
+using (var resolver = new InjectionResolver(container))
+{
+    var map = resolver.Resolve&lt;IInjectionMappingTest&gt;();
+    ...
+}
+</pre>
+							</div>
 							<a href="https://github.com/InjectionMap/InjectionMap"><i class="fa fa-github fa-lg"></i></a>
 						</div>
 					</div>
@@ -353,7 +384,7 @@ using (var context = provider.Open())
 						</div>
 						<div class="panel-body">				  
 							<div class="center">
-							A background Logger for Trace messages
+							A background component for managing, delegating and logging Log and Trace messages
 							</div>
 							<a href="https://github.com/WickedFlame/Scribe"><i class="fa fa-github fa-lg"></i></a>
 						</div>
