@@ -106,7 +106,7 @@
 							<div class="row">
 								<div class="col-sm-6">
 								<h4>Lightweight</h4>
-								All WickedFlame components leave no trace in client code. Components can be capsulated to destinct places where they can easily be replaced.
+								All WickedFlame components are built lightweight with a minimal footprint and leave no trace in client code. Components can be capsulated to destinct places where they can easily be replaced.
 								</div>
 								<div class="col-sm-6">
 								<h4>Fluent</h4>
@@ -384,7 +384,9 @@ using (var resolver = new InjectionResolver(container))
 						</div>
 						<div class="panel-body">				  
 							<div class="center">
-							A background component for managing, delegating and logging Log and Trace messages
+							A background component for managing, delegating and logging Log and Trace messages.
+							Uses the builtin Tracing mechanism to create cutom log entries.
+							Delegates the built in Tracing or custom log messages to custom loggers
 							</div>
 							<a href="https://github.com/WickedFlame/Scribe"><i class="fa fa-github fa-lg"></i></a>
 						</div>
