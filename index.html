@@ -93,8 +93,47 @@
 	
 	<section >
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 page-header">
+			<div class="row margin-top">
+				<div class="col-sm-12 ">
+					<h1>Design principles</h1>
+				</div>
+			</div>
+			
+			<div class="row" ><!--style="background: #F1F1F2"-->
+				<div class="col-sm-12">
+					<div class="panel">
+						<div class="panel-body">
+							<div class="row margin-top">
+								<div class="col-sm-6">
+								<h4>Lightweight</h4>
+								WickedFlame components are lightweight with a absolute minimal footprint and leave no trace in client code. Components can be capsulated to destinct places where they can easily be managed or replaced.
+								</div>
+								<div class="col-sm-6">
+								<h4>Fluent</h4>
+								WickedFlame components support a Fluent Synthax that is simple and easy to use. The Fluent API allways leads the user to the desired result.
+								</div>
+							</div>
+							<div class="row margin-bottom">
+								<div class="col-sm-6">
+								<h4>Configuration</h4>
+								WickedFlame components can be configured in code or within the application configuration. InCode configuration can allways be isolated to destinct areas to minimize the footprint of the component
+								</div>
+								<div class="col-sm-6">
+								<h4>Simplicity</h4>
+								WickedFlame components are designed to have a simple and intuitive API that is easy to use and understand.
+								</div>
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section style="background: #F1F1F2">
+		<div class="container">
+			<div class="row margin-top">
+				<div class="col-sm-12 ">
 					<h1>Frameworks</h1>
 				</div>
 			</div>
@@ -103,29 +142,9 @@
 				<div class="col-sm-12">
 					<div class="panel">
 						<div class="panel-body">
+							
 							<div class="row">
-								<div class="col-sm-6">
-								<h4>Lightweight</h4>
-								All WickedFlame components are built lightweight with a minimal footprint and leave no trace in client code. Components can be capsulated to destinct places where they can easily be replaced.
-								</div>
-								<div class="col-sm-6">
-								<h4>Fluent</h4>
-								All WickedFlame components use a Fluent Synthax that is simple to use. The Fluent API allways leads the user to the desired result.
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-6">
-								<h4>Configuration</h4>
-								WickedFlame components can be configured in the code or within the application config file
-								</div>
-								<div class="col-sm-6">
-								<h4>Simplicity</h4>
-								WickedFlame components are designed to have a simple and intuitive API that is easy to use and understand.
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-3"></div>
-								<div class="col-sm-6">
+								<div class="col-sm-6 col-sm-offset-3">
 									<div class="row icon-row">
 										<div class="col-sm-3">
 											<img src="images/PersistanceMap.png" alt="PersistanceMap" title="PersistanceMap" height="100" class="panel-img"/>
@@ -141,14 +160,40 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-sm-3"></div>
 							</div>
+							
+							<div class="row">
+								<div class="col-sm-6 col-sm-offset-3">
+									<h3 class="center">Persistance</h3>
+									
+								</div>
+							<div>
+							<div class="row">
+								<div class="col-sm-6 col-sm-offset-3">
+									<h3 class="center">Invertion of Control</h3>
+									
+								</div>
+							<div>
+							<div class="row">
+								<div class="col-sm-6 col-sm-offset-3">
+									<h3 class="center">Logging</h3>
+									
+								</div>
+							<div>
+							<div class="row">
+								<div class="col-sm-6 col-sm-offset-3">
+									<h3 class="center">Task processing</h3>
+									
+								</div>
+							<div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	
+	
 	<section style="background: #DDDDDD">
 		<div class="container">
 			<div class="row">
@@ -172,20 +217,29 @@
 								</div>
 								<div class="col-sm-4">
 								<h4>Simplicity</h4>
-								The synthax is simple and easy to use and resemles the SQL or LINQ synthax. 
+								The synthax is simple and easy to use and resemles the SQL or LINQ synthax.
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-4">
 								<h4>Lightweight</h4>
-								PersistanceMap is extremely lightweight and leaves no traces in the client code.
+								PersistanceMap is extremely lightweight with a minimal footprint and leaves no traces in the client code.
 								</div>
 								<div class="col-sm-4">
 								<h4>Fluent</h4>
 								PersistanceMap suports a fluent syntax to help keep the code simple, small and clean.
 								</div>
+								<div class="col-sm-4">
 								<h4>Supported Databases</h4>
 								PersistanceMap currently supports MSSql and SQLite RDMBS Servers.
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-sm-4">
+								<h4>Code first</h4>
+								PersistanceMap supports a code first approach. Databases and tables can be created on the go without having to depend on scripts to do the job.
+								</div>
 							</div>
 						</div>
 						<p>
@@ -196,11 +250,15 @@
 							</div>
 							<div class="row">
 								<div class="col-sm-6">
-								<b>MSSql Server</b>
+								<div class="margin-bottom-s">
+									<b>MSSql Server</b>
+								</div>
 								<pre>PM > Install-Package PersistanceMap</pre>
 								</div>
 								<div class="col-sm-6">
-								<b>SQLite</b>
+								<div class="margin-bottom-s">
+									<b>SQLite</b>
+								</div>
 								<pre>PM > Install-Package PersistanceMap.Sqlite</pre>
 								</div>
 							</div>
@@ -211,10 +269,17 @@
 							<div class="center">
 								<h3>Examples</h3>
 							</div>
+							<div class="center margin-bottom">
+								The only difference in using PersistanceMap for different database types, ist in the IContextProvider. <br>
+								The IContextProvider is the component that is needed to create the context of the specific database type.<br>
+								For MSSql use the SqlContextProvider and for Sqlite use the SqliteContextProvider.<br><br>
+							</div>
 							<div class="row margin-top">
-								<div class="col-sm-6">
-									<b>MSSql Database</b>
-									<pre>
+								<div class="col-sm-8 col-sm-offset-2">
+									<div class="margin-bottom-s">
+										<b>MSSql Database</b>
+									</div>
+									<pre>var connectionString = "data source=.;initial catalog=DemoDatabase;integrated secutrity=true";
 var provider = new <b>SqlContextProvider(connectionString)</b>;
 using (var context = provider.Open())
 {
@@ -224,9 +289,13 @@ using (var context = provider.Open())
 	.Select&lt;OrderWithDetail&gt;()
 }</pre>
 								</div>
-								<div class="col-sm-6">
-									<b>Sqlite Database</b>
-									<pre>
+							</div>
+							<div class="row margin-top margin-bottom">
+								<div class="col-sm-8 col-sm-offset-2">
+									<div class="margin-bottom-s">
+										<b>Sqlite Database</b>
+									</div>
+									<pre>var connectionString = "data source=SQLiteDemo.db";
 var provider = new <b>SqliteContextProvider(connectionString)</b>;
 using (var context = provider.Open())
 {
@@ -238,13 +307,14 @@ using (var context = provider.Open())
 								</div>
 							</div>
 							<div class="row margin-bottom margin-top">
-								<div class="center">
+								<div class="col-sm-8 col-sm-offset-2">
+								<div class="margin-bottom-s">
+									<b class="margin-bottom-s">Code first Database</b>
+								</div>
+								<div class="margin-bottom-s">
 								Create a database, create a Table, insert, read and update values in one go.</br>
 								And everything is generated from the definition of type
 								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-8 col-sm-offset-2">
 									<pre>var provider = new SqlContextProvider(connectionString);
 using (var context = provider.Open())
 {
@@ -350,9 +420,10 @@ using (var context = provider.Open())
 									</div>
 								</div>
 							</p>
-							<h3 class="center">Examples</h3>
-							<div class="col-sm-8 col-sm-offset-2">
-							<pre>var container = new MappingContainer();
+							<div class="row">
+								<h3 class="center">Examples</h3>
+								<div class="col-sm-8 col-sm-offset-2">
+								<pre>var container = new MappingContainer();
 using (var mapper = new InjectionMapper())
 {
     // register InjectionMappingTest to the interface IInjectionMappingTest
@@ -365,6 +436,7 @@ using (var resolver = new InjectionResolver(container))
     ...
 }
 </pre>
+								</div>
 							</div>
 							<a href="https://github.com/InjectionMap/InjectionMap"><i class="fa fa-github fa-lg"></i></a>
 						</div>
