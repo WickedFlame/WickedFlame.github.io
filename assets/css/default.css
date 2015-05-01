@@ -3,6 +3,7 @@ body {
   /*font-family:Arial;*/
   font-family:sans-serif;
   font-size: 16px;
+  font-weight: 700;
   -webkit-text-size-adjust:100%;
   -ms-text-size-adjust:100%;
 }
@@ -77,6 +78,15 @@ h3.header-content {
   margin: 0 0 0 0;
 }
 
+h3 span{
+  /*font-family:Arial Black;
+  font-weight: bold;*/
+  /*color: #001CBF;*/
+  color: #000;
+  text-align: top;
+  font:1.3em 'Arial Black',monospace;
+}
+
 h4{
   padding: 40px 0 0 0;
 }
@@ -99,8 +109,16 @@ pre {
   word-wrap:normal;
   word-break:normal;
   overflow-x:auto;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: Consolas;
 }
-
+ 
+ pre b {
+   font-weight: extrabold;
+   /*font-family: Arial Black;*/
+   color: #00ccff
+ }
 a {
   font-weight: bold;
   color: #3399FF;
@@ -140,7 +158,11 @@ a:focus {
 		background-image: url('../../images/flame-400.png');
 	}
 }
+
+.btn-image {
+  padding: 0;
   
+}
 
 .panel-img{
   text-align: left;
@@ -148,6 +170,12 @@ a:focus {
 
 .center{
   text-align: center;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+	 
 }
 
 .right{
@@ -160,6 +188,16 @@ a:focus {
 
 .section-header {
   padding: 0 0 50px 0;
+}
+
+.subsection-header{
+  padding: 0 0 15px 0;
+}
+
+.subsection-header h3 {
+  padding: 0;
+  margin: 0;
+  color: #FF0000;
 }
 
 .section-footer {
@@ -218,7 +256,7 @@ a:focus {
 }
 
 .broadcast-section {
-    background: #999999;/*#FFFFFF;*/
+    background: #bbb;/*#FFFFFF;*/
     width: 100%;
     padding: 50px 0;
     -webkit-background-size: cover;
@@ -254,20 +292,8 @@ code {
   line-height:1.5em;
   overflow:auto;
   padding:10px 50px
- }
- 
-pre {
-   font-size: 14px;
-   font-weight: 400;
-   font-family: Consolas;
- }
- 
- pre b {
-   font-weight: extrabold;
-   /*font-family: Arial Black;*/
-   color: #00ccff
- }
- 
+}
+
  .principle-icon {
    display: table-cell;
    vertical-align: middle;

@@ -17,8 +17,7 @@
 		<!-- http://astronautweb.co/snippet/font-awesome/ -->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	</head>
-	<!--https://github.com/revel/revel.github.io/blob/master/index.html-->
-	<!-- https://github.com/revel/revel.github.io/blob/master/css/revel.css -->
+	
 	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 		<!-- Navigation -->
 		<nav id="nav" class="navbar navbar-custom navbar-fixed-top">
@@ -63,9 +62,9 @@
 							<!--<h1 class="brand-heading">WickedFlame productions</h1>-->
 							<div class="header-container"></div>
 							<!--<p class="intro-text">A free, responsive, one page Bootstrap theme.<br>Created by Start Bootstrap.</p>-->
-							<a href="#frameworks" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+							<a href="#principles" class="btn btn-circle page-scroll">
+                            	<i class="fa fa-angle-double-down animated"></i>
+                        	</a>
 						</div>
 					</div>
 				</div>
@@ -149,7 +148,8 @@
 									<div class="col-sm-8">
 										<h3 class="header-content">Configuration</h3>
 										WickedFlame components can be configured in code or within the application configuration. InCode configuration
-										can allways be isolated to destinct areas to minimize the footprint of the component</div>
+										can allways be isolated to destinct areas to minimize the footprint of the component
+									</div>
 								</div>
 							</div>
 							<div class="col-sm-6">
@@ -161,9 +161,16 @@
 									</div>
 									<div class="col-sm-8">
 										<h3 class="header-content">Simplicity</h3>
-										WickedFlame components are designed to have a simple and intuitive API that is easy to use and understand.</div>
+										WickedFlame components are designed to have a simple and intuitive API that is easy to use and understand.
+									</div>
 								</div>
 							</div>
+						</div>
+					
+						<div class="row center margin-top">
+							<a href="#frameworks" class="btn btn-circle btn-dark page-scroll">
+	                        	<i class="fa fa-angle-double-down icon-dark animated"></i>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -183,70 +190,76 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<div class="row">
-							<div class="col-sm-8 col-sm-offset-2">
+							<div class="col-sm-4">
+								<div class="middle center" style="height: 400px">
+									<div class="subsection-header subsection-header">
+										<h3><span>[</span>frameworks<span>]</span></h3>										
+									</div>
+									<h5>designed for speed and simplicity</h5>
+									<h5>open source and free</h5>
+									<h5>lightweight to the core</h5>
+								</div>
+							</div>
+							<div class="col-sm-8">
 								<div class="row margin-top">
 									<div class="col-sm-2">
-										<img src="images/PersistanceMap.png" alt="PersistanceMap" title="PersistanceMap" height="100" class="panel-img" />
+										<a href="#persistancemap" class="btn page-scroll btn-image">
+											<img src="images/PersistanceMap.png" alt="PersistanceMap" title="PersistanceMap" height="100" class="panel-img" />
+										</a>
 									</div>
-									<div class="col-sm-6">
+									<div class="col-sm-8">
 										<div class="row">
 											<h4 class="header-content">Data access and persistance</h4>
 												PersistanceMap lets you easily access and persist data with its intuitive, simple and fast API.
+												The Code-First implementation allows full control over the database
 										</div>
 									</div>
 								</div>
 								<div class="row margin-top">
 									<div class="col-sm-2">
-										<img src="images/InjectionMap.png" alt="InjectionMap" title="InjectionMap" height="100" class="panel-img" />
+										<a href="#injectionmap" class="btn page-scroll btn-image">
+											<img src="images/InjectionMap.png" alt="InjectionMap" title="InjectionMap" height="100" class="panel-img" />
+										</a>
 									</div>
 									<div class="col-sm-6">
 										<div class="row">
-											<h4 class="header-content">DI/IoC with InjectionMap</h4>
-												Get the most of DependencyInjection with InjectionMap
+											<h4 class="header-content">DI/IoC</h4>
+												Get the most of DependencyInjection and Inversion of Control with InjectionMap
 										</div>
 									</div>
-									
-									<!--<div class="col-sm-6 col-sm-offset-4">
-										<div class="row right">
-											<h4 class="header-content">DI/IoC with InjectionMap</h4>
-												Get the most of DependencyInjection with InjectionMap
-										</div>
-									</div>
-									<div class="col-sm-2">
-										<img src="images/InjectionMap.png" alt="InjectionMap" title="InjectionMap" height="100" class="panel-img" />
-									</div>-->
 								</div>
 								<div class="row margin-top">
 									<div class="col-sm-2">
-										<img src="images/Scribe.png" alt="Scribe" title="Scribe" height="100" class="panel-img" />
+										<a href="#scribe" class="btn page-scroll btn-image">
+											<img src="images/Scribe.png" alt="Scribe" title="Scribe" height="100" class="panel-img" />
+										</a>
 									</div>
 									<div class="col-sm-6">
 										<div class="row">
 											<h4 class="header-content">Logging and Diagnostics</h4>
-												
+											Easily write to your favourite loggers through a simple API 
 										</div>
 									</div>
 								</div>
 								<div class="row margin-top">
 									<div class="col-sm-2">
-										<img src="images/Broadcast.png" alt="Broadcast" title="Broadcast" height="100" class="panel-img" />
+										<a href="#broadcast" class="btn page-scroll btn-image">
+											<img src="images/Broadcast.png" alt="Broadcast" title="Broadcast" height="100" class="panel-img" />
+										</a>
 									</div>
 									<div class="col-sm-6">
 										<div class="row">
 											<h4 class="header-content">Task queue and processing</h4>
+												Easily process Tasks asynchronously without having to care about when and how they will be processed
 										</div>
 									</div>
-									
-									<!--<div class="col-sm-6  col-sm-offset-4">
-										<div class="row right">
-											<h4 class="header-content">Task queue and processing</h4>
-										</div>
-									</div>
-									<div class="col-sm-2">
-										<img src="images/Broadcast.png" alt="Broadcast" title="Broadcast" height="100" class="panel-img" />
-									</div>-->
 								</div>
 							</div>
+						</div>
+						<div class="row center margin-top">
+							<a href="#persistancemap" class="btn btn-circle btn-dark page-scroll">
+	                        	<i class="fa fa-angle-double-down icon-dark animated"></i>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -381,8 +394,8 @@ using (var context = provider.Open())
 									<div class="margin-bottom-s">
 										<h5 class="margin-bottom-s">Code first sample</h5>
 									</div>
-									<div class="margin-bottom-s">Create a database, create a Table, insert, read and update values in one go.</br>
-										And everything is generated from the definition of type</div>
+									<!--<div class="margin-bottom-s">Create a database, create a Table, insert, read and update values in one go.</br>
+										And everything is generated from the definition of type</div>-->
 									<pre>var provider = new SqlContextProvider(connectionString); 
 using (var context = provider.Open()) 
 { 
@@ -417,6 +430,12 @@ using (var context = provider.Open())
 									</li>
 								</ul>
 							</div>
+						</div>
+					
+						<div class="row center margin-top">
+							<a href="#injectionmap" class="btn btn-circle btn-dark page-scroll">
+	                        	<i class="fa fa-angle-double-down icon-dark animated"></i>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -522,8 +541,8 @@ using (var resolver = new InjectionResolver())
 							<div class="row">
 								<div class="center margin-bottom margin-top">
 									When there is a need to map to distinct contexts intead of the global context, <br/>
-									the InjectionMapper and InjectionResolver accept a instance of MappingContext. <br/>
-									All mappings will we set and resolved from this context only.
+									the InjectionMapper and InjectionResolver accept a instance of a MappingContext. <br/>
+									All mappings will be set and resolved from this context only.
 								</div>
 								<div class="col-sm-8 col-sm-offset-2">
 									<pre>var context = new MappingContext();
@@ -551,6 +570,12 @@ using (var resolver = new InjectionResolver(context))
 									<a href="https://www.nuget.org/packages/InjectionMap" class="btn btn-default btn-lg"><i class="fa fa-chevron-circle-down fa-fw"></i><span class="network-name">NuGet</span></a>
 								</li>
 							</ul>
+						</div>
+					
+						<div class="row center margin-top">
+							<a href="#scribe" class="btn btn-circle btn-dark page-scroll">
+	                        	<i class="fa fa-angle-double-down icon-dark animated"></i>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -601,6 +626,12 @@ using (var resolver = new InjectionResolver(context))
 									<a href="https://www.nuget.org/packages/Scribe" class="btn btn-default btn-lg"><i class="fa fa-chevron-circle-down fa-fw"></i><span class="network-name">NuGet</span></a>
 								</li>
 							</ul>
+						</div>
+					
+						<div class="row center margin-top">
+							<a href="#broadcast" class="btn btn-circle btn-dark page-scroll">
+	                        	<i class="fa fa-angle-double-down icon-dark animated"></i>
+							</a>
 						</div>
 					</div>
 				</div>
