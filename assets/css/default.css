@@ -225,6 +225,11 @@ a:focus {
     -o-background-size: cover;
 }
 
+.frameworks-header {
+  /*height: 400px;*/
+  display: table-cell;
+}
+
 .persistance-section {
     background: #DDDDDD;
     width: 100%;
@@ -298,3 +303,22 @@ code {
    display: table-cell;
    vertical-align: middle;
  }
+ 
+ @media all and (max-width: 767px) {
+  .frameworks-section {
+		text-align: center;
+	}
+  
+  .priciples-section {
+    text-align: center;
+  }
+  
+  .principle-icon {
+    display: inline;
+  }
+  
+  .frameworks-header {
+    /*height: 400px;*/
+    display: inline;
+  }
+}
