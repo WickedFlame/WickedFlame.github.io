@@ -216,7 +216,9 @@ a:focus {
 }
 
 .frameworks-section {
-    background: #F1F1F2;
+    background: #F1F1F1;
+    border-top:#e7e7e7 solid 1px;
+    /*border-bottom:#e7e7e7 solid 1px;*/
     width: 100%;
     padding: 50px 0;
     -webkit-background-size: cover;
@@ -232,6 +234,8 @@ a:focus {
 
 .persistance-section {
     background: #DDDDDD;
+    border-top:#CCCCCC solid 1px;
+    border-bottom:#CCCCCC solid 1px;
     width: 100%;
     padding: 50px 0;
     -webkit-background-size: cover;
@@ -252,6 +256,8 @@ a:focus {
 
 .scribe-section {
     background: #CCCCCC;
+    border-top:#BBBBBB solid 1px;
+    /*border-bottom:#CCCCCC solid 1px;*/
     width: 100%;
     padding: 50px 0;
     -webkit-background-size: cover;
@@ -262,6 +268,8 @@ a:focus {
 
 .broadcast-section {
     background: #bbb;/*#FFFFFF;*/
+    border-top:#AAAAAA solid 1px;
+    border-bottom:#AAAAAA solid 1px;
     width: 100%;
     padding: 50px 0;
     -webkit-background-size: cover;
