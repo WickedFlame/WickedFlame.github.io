@@ -664,6 +664,53 @@ using (var resolver = new InjectionResolver(context))
 							</div>
 						</div>
 						
+						
+						
+						
+						
+						
+						
+						
+						
+						<div class="row">
+							<h3 class="center">Examples</h3>
+							<div class="row">
+								<div class="center margin-bottom">
+									Task Processing can be done Synchronous and Asynchronous <br>depending on the ProcessorMode passed to the Broadcaster.
+								</div>
+								<div class="col-sm-8 col-sm-offset-2">
+									<!--<div class="margin-bottom-s">
+										<h5 class="margin-bottom-s">Task Processing</h5>
+									</div>-->
+									<pre>IBroadcaster broadcaster = new Broadcaster();
+broadcaster.Send(() =&gt; Trace.WriteLine("This is a basic synchronous processed task"));</pre>
+								</div>
+							</div>
+							<div class="row">
+								<div class="center margin-bottom margin-top">
+									Simple Sample of how Eventhandlers can be registered and called
+								</div>
+								<div class="col-sm-8 col-sm-offset-2">
+									<!--<div class="margin-bottom-s">
+										<h5 class="margin-bottom-s">Event Handling</h5>
+									</div>-->
+									<pre>// Broadcaster is usualy resolved through DependencyInjection
+IBroadcaster broadcaster = new Broadcaster();
+
+// register different handlers
+broadcaster.RegisterHandler(notificationHandler);
+broadcaster.RegisterHandler&lt;Message&gt;(delegateHandler.Handle);
+broadcaster.RegisterHandler&lt;Message&gt;(a =&gt; expressionHandler = a.ID);
+
+// publish a message to the handlers
+broadcaster.Send(new Message(5));</pre>
+								</div>
+							</div>
+							
+							
+						
+
+						
 						<div class="row">
 							<div class="center section-footer">
 								<ul class="list-inline banner-social-buttons">
