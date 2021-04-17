@@ -93,6 +93,7 @@ img {
 a > img {
     margin: 0;
     display: initial;
+    vertical-align: baseline;
 }
 
 .highlight .hll { background-color: #ffffcc }
