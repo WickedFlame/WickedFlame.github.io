@@ -1,7 +1,7 @@
-title: 'Polaroider'
+title: 'WickedFlame'
 subtitle: 'Documentation'
-codeurl: 'https://github.com/WickedFlame/Polaroider'
-baseurl: '/Polaroider'
+codeurl: 'https://github.com/WickedFlame'
+baseurl: '/'
 highlighter: rouge
 exclude: [README.md']
 markdown: kramdown
