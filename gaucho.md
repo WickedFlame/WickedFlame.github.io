@@ -1,6 +1,10 @@
 ---
-title: Yaml
+title: Gaucho
 layout: "default"
-nav_order: 6
+nav_order: 5
 ---
-## Yaml
+## Gaucho
+A .NET Message Broker Middleware for handling, converting and delegating events  
+  
+### Documentation
+Visit https://wickedflame.github.io/Gaucho/ for the full documentation.
