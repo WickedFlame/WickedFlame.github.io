@@ -90,7 +90,7 @@ img {
     display: block;
 }
 
-a.img {
+a > img {
     margin: 0;
     display: initial;
 }
