@@ -12,4 +12,4 @@ Broadcast helps implement the Mediator and CQRS (Command- and Queryhandling) pat
 [![NuGet Version](https://img.shields.io/nuget/v/broadcast.svg?style=flat)](https://www.nuget.org/packages/broadcast/)
   
 ### Documentation
-Visit https://wickedflame.github.io/Broadcast/ for the full documentation.
+Visit [https://wickedflame.github.io/Broadcast/](https://wickedflame.github.io/Broadcast/) for the full documentation.

@@ -11,4 +11,4 @@ nav_order: 2
 [![NuGet Version](https://img.shields.io/nuget/v/measuremap.svg?style=flat)](https://www.nuget.org/packages/measuremap/)
   
 ### Documentation
-Visit https://wickedflame.github.io/MeasureMap/ for the full documentation.
+Visit [https://wickedflame.github.io/MeasureMap/](https://wickedflame.github.io/MeasureMap/) for the full documentation.

@@ -13,4 +13,4 @@ Scribe is a background Logger and Dispatcher component for creating, manipulatin
 Scribe is a background Logger and Diagnostics component that collects and delegates Log messages. Scribe can be completely configured in the root of the Application without leaving any traces in the client code. All that is needed is the Interface Scribe.ILogger  
   
 ### Documentation
-Visit https://wickedflame.github.io/Scribe/ for the full documentation.
+Visit [https://wickedflame.github.io/Scribe/](https://wickedflame.github.io/Scribe/) for the full documentation.

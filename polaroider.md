@@ -11,4 +11,4 @@ Simplify UnitTesting with snapshots. Polaroider is a Approval Testing Framework 
 [![NuGet Version](https://img.shields.io/nuget/v/polaroider.svg?style=flat)](https://www.nuget.org/packages/polaroider/)
   
 ### Documentation
-Visit https://wickedflame.github.io/Polaroider/ for the full documentation.
+Visit [https://wickedflame.github.io/Polaroider/](https://wickedflame.github.io/Polaroider/) for the full documentation.
